@@ -11,6 +11,14 @@ public class Prime {
         int num = sc.nextInt();
         String result = primeCheck(num);
         System.out.println(result);
+        System.out.println("Enter the range to get all prime number between them");
+        int startNum = sc.nextInt();
+        int lastNum = sc.nextInt();
+        for(int i=startNum; i<=lastNum;i++)
+        {
+            if(primeCheck(i).equals("Prime"))
+                System.out.print(i+" ");
+        }
 
     }
     static String primeCheck(int num)
@@ -26,4 +34,6 @@ public class Prime {
         }
         return "Prime";
     }
+
+
 }
